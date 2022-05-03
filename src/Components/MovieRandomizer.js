@@ -2,11 +2,9 @@ const MovieRandomizer = () => {
     
     return (
 
-        console.log("test")
-
-        // Math.floor(Math.random() * movieResults.length)
+        Math.floor(Math.random() * 19)
     )
 
 }
 
-// export default MovieRandomizer 
+export default MovieRandomizer 

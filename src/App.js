@@ -2,12 +2,14 @@ import './App.css';
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 import PageRandomizer from './Components/PageRandomizer';
-import MovieRandomizer from './Components/MovieRandomizer';
+import MovieRandomizer from './Components/movieRandomizer';
+import DisplayMovies from './Components/DisplayMovie';
 
 
 function App() {
 
-  const [randomMovie, setRandomMovie] = useState()
+  const [randomMovie, setRandomMovie] = useState([])
+  const [chosenMovie, setChosenMovie] = useState()
 
   useEffect(() => {
 
@@ -22,13 +24,20 @@ function App() {
 
     })
       .then((response) => {
-        const movieResults = response.data
-        console.log("movieResults", movieResults)
+        const movieResults = response.data.results
 
         setRandomMovie(movieResults)
-      })
 
-  }, [])
+      })
+      
+    }, [])
+
+    const handleRandomMovie = () => {
+
+      setChosenMovie(randomMovie[MovieRandomizer()])
+
+    }
+
 
   return (
     <div className="App">
@@ -44,8 +53,11 @@ function App() {
       {/* A div from a component to display the result. */}
 
 
-      {/* OnClick will run a function to display the result */}
-      <button>WATCH</button>
+      {/* OnClick on button that will run a function to display the result */}
+
+      <button onClick={() => {handleRandomMovie()}}>WATCH</button>
+      
+      <DisplayMovies movie={chosenMovie}/>
 
     </div>
   );
