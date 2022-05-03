@@ -26,17 +26,20 @@ function App() {
       .then((response) => {
         const movieResults = response.data.results
 
+        //storing 
+
         setRandomMovie(movieResults)
 
       })
-      
-    }, [chosenMovie])
 
-    const handleRandomMovie = () => {
+    //useEffect will run whenever the chosenMovie state is updated, in this case it is being updated through handleRandomMovie
+  }, [chosenMovie])
 
-      setChosenMovie(randomMovie[MovieRandomizer()]);
+  const handleRandomMovie = () => {
 
-    }
+    setChosenMovie(randomMovie[MovieRandomizer()]);
+
+  }
 
 
   return (
@@ -49,11 +52,16 @@ function App() {
         <p>And Chill....</p>
       </header>
 
-      <button onClick={() => {handleRandomMovie()}}>WATCH</button>
-      
-      <DisplayMovies movie={chosenMovie}/>
+      {/* handleRandomMovie gets called on click */}
+      <button onClick={() => { handleRandomMovie() }}>WATCH</button>
 
-    </div>
+      <DisplayMovies movie={chosenMovie} />
+
+
+      <footer className="footer">
+        <p>Created at Juno College of Technology</p>
+      </footer>
+    </div >
   );
 }
 
