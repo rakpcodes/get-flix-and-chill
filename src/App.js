@@ -30,11 +30,11 @@ function App() {
 
       })
       
-    }, [])
+    }, [chosenMovie])
 
     const handleRandomMovie = () => {
 
-      setChosenMovie(randomMovie[MovieRandomizer()])
+      setChosenMovie(randomMovie[MovieRandomizer()]);
 
     }
 
@@ -48,12 +48,6 @@ function App() {
         <p>Get Yourself a Flick.</p>
         <p>And Chill....</p>
       </header>
-
-
-      {/* A div from a component to display the result. */}
-
-
-      {/* OnClick on button that will run a function to display the result */}
 
       <button onClick={() => {handleRandomMovie()}}>WATCH</button>
       
