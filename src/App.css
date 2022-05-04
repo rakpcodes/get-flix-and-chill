@@ -87,7 +87,7 @@ body {
 }
 
 .imageContainer {
-  width: 40%;
+  width: 30%;
 }
 
 .imageContainer img {
@@ -95,7 +95,7 @@ body {
 }
 
 .textContainer {
-  width: 40%;
+  width: 60%;
   text-align: left;
   font-size: 1.2rem;
 }
