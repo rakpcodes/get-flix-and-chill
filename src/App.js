@@ -53,7 +53,7 @@ function App() {
       <header className='header'>
         <h1>Get Flix and Chill</h1>
         <div className="headerText">
-          <p>Get Flix and Chill. An app created using the Movie Database API that gives you a random movie to watch on day where you can't decide.</p>
+          <p>Get Flix and Chill. An app created using the Movie Database API that gives you a random movie to watch on days where you can't decide.</p>
           <p>Hit the Button. Get a Flick. And Chill....</p>
         </div>
       </header>
