@@ -28,7 +28,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* margin-top: px; */
+  margin-bottom: 40px;
 }
 
 .header h1 {
@@ -59,7 +59,7 @@ body {
   font-size: 1.5rem;
   font-family: 'Koulen', cursive;
   position: relative;
-  bottom: 50px;
+  bottom: 40px;
   margin: 50px 0px;
   letter-spacing: 5px;
   box-shadow: 0 9px #9c060e;
