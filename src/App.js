@@ -2,7 +2,7 @@ import './App.css';
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 import PageRandomizer from './Components/PageRandomizer';
-import MovieRandomizer from './Components/movieRandomizer';
+import MovieRandomizer from './Components/MovieRandomizer';
 import DisplayMovies from './Components/DisplayMovie';
 
 
