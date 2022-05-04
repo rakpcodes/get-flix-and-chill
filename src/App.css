@@ -30,6 +30,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 75px;
 }
 
 .header h1 {
@@ -74,9 +75,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background: linear-gradient(to top, transparent 0%, black 100%);
+  background-color: rgba(0, 0, 0, 0.7);
   margin: 50px 0px 225px 0px;
-  padding-top: 25px;
+  padding: 25px 0px;
 }
 
 .imageContainer {
@@ -91,6 +92,13 @@ body {
 
   width: 40%;
   text-align: left;
+  font-size: 1.2rem;
+
+}
+
+.textContainer span {
+
+  font-weight: bold;
 
 }
 
@@ -101,4 +109,44 @@ body {
   left: 0;
   background-color: black;
   color:#E50914
+}
+
+@media (max-width: 860px) {
+
+  .header h1 {
+
+    font-size: 4rem;
+
+  }
+
+  .headerText {
+
+    width: 90%;
+  }
+
+  .imageContainer {
+    width: 50%;
+  }
+
+  .textContainer {
+
+    font-size: 1rem;
+  
+  }
+
+}
+
+@media (max-width: 760px) {
+
+  .resultContainer {
+
+    flex-direction: column;
+
+  }
+
+  .imageContainer, .textContainer {
+
+    width: 80%;
+  }
+
 }

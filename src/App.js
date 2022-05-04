@@ -49,7 +49,7 @@ function App() {
         <h1>Get Flix and Chill</h1>
         <div className="headerText">
           <p>Get Flix and Chill. An app created using the Movie Database API that gives you a random movie to watch on day where you can't decide.</p>
-          <p>Hit the Button Below. Get Yourself a Flick. And Chill....</p>
+          <p>Hit the Button. Get a Flick. And Chill....</p>
         </div>
       </header>
 
