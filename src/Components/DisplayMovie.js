@@ -3,10 +3,9 @@ const DisplayMovies = (props) => {
     return (
 
         <div className="MovieResult">
-            {
-                props.movie === undefined ?
 
-                    null :
+            {/* Ternary statement to for error handling, no errors will allow the function to run on button click*/}
+            { props.movie === undefined ? null :
                     <>
                         <div className="resultContainer">
 

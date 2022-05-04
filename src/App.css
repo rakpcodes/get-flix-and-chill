@@ -5,7 +5,6 @@
 
 html {
   font-size: 125%;
-
 }
 
 .wrapper {
@@ -26,7 +25,6 @@ body {
 }
 
 .header {
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,24 +32,20 @@ body {
 }
 
 .header h1 {
-
   font-family: 'Koulen', cursive;
   font-size: 5rem;
   margin-bottom: 25px;
   color: #E50914;
   line-height: 4rem;
-
 }
 
 .header p {
-
   padding: 10px 0px;
   margin: 10px 0px;
   font-weight: bold;
 }
 
 .headerText {
-
   width: 60%;
 }
 
@@ -70,7 +64,6 @@ body {
 
 .watch:hover, .watch:focus{
   background-color: white;
-
 }
 
 .resultContainer {
@@ -91,17 +84,13 @@ body {
 }
 
 .textContainer {
-
   width: 40%;
   text-align: left;
   font-size: 1.2rem;
-
 }
 
 .textContainer span {
-
   font-weight: bold;
-
 }
 
 .footer {
@@ -116,13 +105,10 @@ body {
 @media (max-width: 860px) {
 
   .header h1 {
-
     font-size: 4rem;
-
   }
 
   .headerText {
-
     width: 90%;
   }
 
@@ -131,9 +117,7 @@ body {
   }
 
   .textContainer {
-
     font-size: 1rem;
-  
   }
 
 }
@@ -141,18 +125,14 @@ body {
 @media (max-width: 760px) {
 
   .header {
-
     margin-top: 30px;
   }
 
   .resultContainer {
-
     flex-direction: column;
-
   }
 
   .imageContainer, .textContainer {
-
     width: 80%;
   }
 
@@ -161,22 +141,18 @@ body {
 @media (max-width: 400px) {
 
   .header {
-
     margin-top: 0px;
   }
 
   .header h1 {
-
     font-size: 3rem;
   }
 
   .header p{
-
     font-size: 0.9rem;
   }
 
   .footer p{
-
     font-size: 0.7rem;
   }
 

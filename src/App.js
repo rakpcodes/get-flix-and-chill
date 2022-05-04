@@ -24,16 +24,21 @@ function App() {
 
     })
       .then((response) => {
+        // Storing response within movieResults variable.
+
         const movieResults = response.data.results
 
-        //storing 
+        // updating value of randomMovie state to be the results array returned from API call.
 
         setRandomMovie(movieResults)
 
       })
 
-    //useEffect will run whenever the chosenMovie state is updated, in this case it is being updated through handleRandomMovie
+    // useEffect will run whenever the chosenMovie state is updated, in this case it is being updated through handleRandomMovie
   }, [chosenMovie])
+
+  // Updating chosenMovie state value using the randomMovie state and running movieRandomizer function to pull random index out of array stored. 
+  // This whole process is stored within a handle function which is then called on button click.
 
   const handleRandomMovie = () => {
 
@@ -53,9 +58,10 @@ function App() {
         </div>
       </header>
 
-      {/* handleRandomMovie gets called on click */}
+      {/* handleRandomMovie gets called on click, stored within an anonymous function to stop it from continuously running on click */}
       <button className='watch' onClick={() => { handleRandomMovie() }}>WATCH</button>
 
+{/* chosenMovie being sent as prop to DisplayMovie component after random index has been selected for a single movie object */}
       <DisplayMovies movie={chosenMovie} />
 
       <footer className="footer">

@@ -1,7 +1,6 @@
 const MovieRandomizer = () => {
-    
-    return (
 
+    return (
         Math.floor(Math.random() * 19)
     )
 
