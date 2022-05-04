@@ -58,11 +58,11 @@ function App() {
         </div>
       </header>
 
-      {/* handleRandomMovie gets called on click, stored within an anonymous function to stop it from continuously running on click */}
-      <button className='watch' onClick={() => { handleRandomMovie() }}>WATCH</button>
-
 {/* chosenMovie being sent as prop to DisplayMovie component after random index has been selected for a single movie object */}
       <DisplayMovies movie={chosenMovie} />
+
+      {/* handleRandomMovie gets called on click, stored within an anonymous function to stop it from continuously running on click */}
+      <button className='watch' onClick={() => { handleRandomMovie() }}>WATCH</button>
 
       <footer className="footer">
         <p>Created at Juno College of Technology</p>
