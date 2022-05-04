@@ -1,38 +1,159 @@
 .App {
   text-align: center;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  font-size: 125%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.wrapper {
+  max-width: 1200px;
+  width: 85%;
+  margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  background-image: url(../assets/felix-mooneeram-evlkOfkQ5rE-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+  color: white;
+  height: 100%;
+
+}
+
+.header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 75px;
 }
 
-.App-link {
-  color: #61dafb;
+.header h1 {
+  font-family: 'Koulen', cursive;
+  font-size: 5rem;
+  margin-bottom: 25px;
+  color: #E50914;
+  line-height: 4rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.header p {
+  padding: 10px 0px;
+  margin: 10px 0px;
+  font-weight: bold;
+}
+
+.headerText {
+  width: 60%;
+}
+
+.watch {
+  color: #E50914;
+  background-color: black;
+  border: 2px solid red;
+  border-radius: 10px;
+  padding: 15px 38px 15px 40px;
+  font-size: 1.5rem;
+  font-family: 'Koulen', cursive;
+  margin: 50px 0px;
+  transition: all 0.3s ease-in-out;
+  letter-spacing: 5px;
+}
+
+.watch:hover, .watch:focus{
+  background-color: white;
+}
+
+.resultContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 50px 0px 225px 0px;
+  padding: 25px 0px;
+}
+
+.imageContainer {
+  width: 40%;
+}
+
+.imageContainer img {
+  width: 100%;
+}
+
+.textContainer {
+  width: 40%;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.textContainer span {
+  font-weight: bold;
+}
+
+.footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  color:#E50914
+}
+
+@media (max-width: 860px) {
+
+  .header h1 {
+    font-size: 4rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .headerText {
+    width: 90%;
   }
+
+  .imageContainer {
+    width: 50%;
+  }
+
+  .textContainer {
+    font-size: 1rem;
+  }
+
+}
+
+@media (max-width: 760px) {
+
+  .header {
+    margin-top: 30px;
+  }
+
+  .resultContainer {
+    flex-direction: column;
+  }
+
+  .imageContainer, .textContainer {
+    width: 80%;
+  }
+
+}
+
+@media (max-width: 400px) {
+
+  .header {
+    margin-top: 0px;
+  }
+
+  .header h1 {
+    font-size: 3rem;
+  }
+
+  .header p{
+    font-size: 0.9rem;
+  }
+
+  .footer p{
+    font-size: 0.7rem;
+  }
+
 }
