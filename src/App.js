@@ -43,24 +43,24 @@ function App() {
 
 
   return (
-    <div className="App">
-      <header>
-        <h1>Get Flix and Chill</h1>
+    <div className="App wrapper">
+
+        <header>
+          <h1>Get Flix and Chill</h1>
+        </header>
+
         <p>Get Flix and Chill. An app created using the Movie Database API that gives you a random movie to watch on day where you can't decide.</p>
         <p>Hit the Button Below.</p>
         <p>Get Yourself a Flick.</p>
         <p>And Chill....</p>
-      </header>
+        {/* handleRandomMovie gets called on click */}
+        <button onClick={() => { handleRandomMovie() }}>WATCH</button>
 
-      {/* handleRandomMovie gets called on click */}
-      <button onClick={() => { handleRandomMovie() }}>WATCH</button>
+        <DisplayMovies movie={chosenMovie} />
 
-      <DisplayMovies movie={chosenMovie} />
-
-
-      <footer className="footer">
-        <p>Created at Juno College of Technology</p>
-      </footer>
+        <footer className="footer">
+          <p>Created at Juno College of Technology</p>
+        </footer>
     </div >
   );
 }
