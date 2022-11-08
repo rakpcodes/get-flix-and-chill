@@ -1,6 +1,6 @@
 # Get Flix and Chill
 
-Live Link: [getflixandchill.netlify.app](getflixandchill.netlify.app)
+Live Link: [Get Flix and Chill](https://getflixandchill.netlify.app/)
 
 
 Find yourself something to watch! :)
